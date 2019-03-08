@@ -1,0 +1,167 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=129;
+	class ItemIDProvider
+	{
+		nextID=6;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={2001.4381,10.050346,4005.05};
+		dir[]={-0.076428734,-0.36482874,0.92804891};
+		up[]={-0.02994995,0.93102992,0.3636888};
+		aside[]={0.99673325,-3.2600656e-007,0.082083583};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Structures_F_Mil_Flags",
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=11895793;
+class ScenarioData
+{
+	author="Ph¡l";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=5;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1999.9808,5.0014391,4014.0461};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="B_support_AMort_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2000.1169,8.9768047,4018.5271};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="call{this addAction[""STS 1"",{ [[""127.0.0.1"",""2350"",15,""test"",true],[""marker"",""sts_exit"",0]] call fox_sts_fnc_initSTS }];}";
+			};
+			id=2;
+			type="Flag_Altis_F";
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2002.656,8.9768047,4018.136};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="call{this addAction[""STS 2"",{ [[""127.0.0.1"",""2355"",15,""test"",true],[""position"",[0,0,0],75]] call fox_sts_fnc_initSTS }];}";
+			};
+			id=3;
+			type="Flag_Blue_F";
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={1999.498,5,4020.429};
+			name="sts1";
+			text="sts1";
+			type="mil_marker";
+			id=4;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={2065.311,5,4022.238};
+			name="sts2";
+			text="sts2";
+			type="mil_destroy";
+			id=5;
+		};
+	};
+};

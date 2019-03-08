@@ -1,0 +1,18 @@
+class CfgFunctions{
+	class fox_sts
+	{
+	  class sts
+	  {
+			file = "functions";
+	    class saveGear{};
+	    class loadGear{};
+	    class initSTS{};
+			class requestSTS{};
+			class newPlayer{postInit = 1;}; 
+			class moveToExit{};
+	  };
+	};
+};
+enableDebugConsole = 2;
+disabledAI = 1;
+allowFunctionsRecompile = 1;
